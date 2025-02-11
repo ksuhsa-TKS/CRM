@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container header__container">
+            <a class="link link__logo" href="http://127.0.0.1:5500/index.html">
+                <img class="img logotip" src="img/logotip.png" alt="Логотип компании skb">
+            </a>
+            <form class="form" action="#" method="get">
+                <input class="input form__input form__input--header" id="header-input" type="search"
+                    placeholder="Введите запрос">
+            </form>
+        </div>
+    </header>
+    <main class="main">
+        <section class="container">
+            <h1 class="title main__title">Клиенты</h1>
+            <div class="block">
+                <table class="table" id="table">
+                    <thead>
+                        <tr class="table__header">
+                            <th class="title table__title sort table__id sort-onclick" id="id-client">ID</th>
+                            <th class="title table__title sort table__name" id="full-name">Фамилия Имя Отчество</th>
+                            <th class="title table__title sort table__data" id="date-creation">Дата и&nbsp;время
+                                создания</th>
+                            <th class="title table__title sort table__data" id="date-change">Последние изменения</th>
+                            <th class="title table__title table__link">Контакты</th>
+                            <th class="title table__title table__btn">Действия</th>
+                        </tr>
+                    </thead>
+                </table>
+                <div class="anima-wrap"><span class="anima-element"></span></div>
+            </div>
+            <div class="btn-wrap">
+                <button class="btn btn__add-client" id="add-client">
+                    Добавить клиента
+                    <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z"
+                            fill=currentColor />
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
